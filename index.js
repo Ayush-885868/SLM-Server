@@ -34,7 +34,7 @@ app.use(cookieParser())
 app.use('/auth', UserRouter)*/
 
 
-//app.use('/contactmsyt',Router )
+app.use('/contactmsyt',Router )
 //const mongoose = require('mongoose');
 mongoose.connect(process.env.URI);
 /*app.use(errorMiddleware);
