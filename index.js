@@ -20,7 +20,8 @@ app.use(express.json())
 app.use(cors(
     {
         origin:"https://slm-client.vercel.app",
-        // methods:["POST", "GET", "PUT"],
+        methods:["POST", "GET", "PUT", "DELETE", "OPTIONS"],
+        allowedHeaders:['Content-Type','Authorization' ],
         credentials:true
     }
 ));
@@ -36,7 +37,9 @@ app.use('/auth', UserRouter)*/
 
 app.use('/test',Router )
 //app.use('/contactmsyt',Router )
-
+app.get("/", (req,res) =>
+    res.send("backend is going well")
+);
 //const mongoose = require('mongoose');
 mongoose.connect(process.env.URI);
 /*app.use(errorMiddleware);
