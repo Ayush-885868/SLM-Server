@@ -22,7 +22,7 @@ app.use(cors(
         //origin:"https://slm-client.vercel.app",
         origin:"https://slm-client-ath69wr6d-ayush-885868s-projects.vercel.app",
         methods:["POST", "GET", "PUT", "DELETE", "OPTIONS"],
-        allowedHeaders:['Content-Type','Authorization' ],
+        //allowedHeaders:['Content-Type','Authorization' ],
         credentials:true
     }
 ));
